@@ -1,8 +1,6 @@
 # dexy
 Desktop application that allows you to see glucose numbers through Dexcom.
 
-![image](https://github.com/user-attachments/assets/bcb5209e-2a3e-449e-b534-247984249b48)
-
 > [!WARNING]
 > `dexy` is most definitely still a **work in progress**. If you notice a bug, please open an issue or PR. We are not affiliated with Dexcom in any way.
 
