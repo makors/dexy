@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# dexy
+Desktop application that allows you to see glucose numbers through Dexcom.
 
-## Getting Started
+![image](https://github.com/user-attachments/assets/bcb5209e-2a3e-449e-b534-247984249b48)
 
-First, run the development server:
+> [!WARNING]
+> `dexy` is most definitely still a **work in progress**. If you notice a bug, please open an issue or PR. We are not affiliated with Dexcom in any way.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
+`dexy` is a desktop application that allows you to see your numbers via Dexcom, given your username and password. Dexcom Share must be enabled for `dexy` to work properly. Nothing is sent to a remote server and absolutely everything is ran locally. Under the hood, [`dexrs`](https://github.com/makors/dexrs) is used.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features:
+- A nice UI with color-coded glucose numbers
+- Built in Rust so it's fast (but the website is JS, so not really)
+- Your data isn't sold to a big tech company
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you have an issue or even just a feature suggestion, feel free to contact me.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
+- Clone this repository with Bun and Rust installed
+- In one terminal window, run `bun tauri dev`
+- In another terminal window, run `bun dev` to start the NextJS server
+- Wait for the app to compile and then you'll have a `dexy` instance!
 
-## Learn More
+## Contributing
+If you wish to contribute improvements, bug fixes, or even new features, feel free to open a PR. *Everyone* is welcome to contribute.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+Everything is licensed under MIT. See [LICENSE](https://github.com/makors/dexy/tree/main/LICENSE) for more.
